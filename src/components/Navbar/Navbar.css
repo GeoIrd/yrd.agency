@@ -1,0 +1,174 @@
+.navbar {
+  position: fixed;
+
+  height: 90px;
+  width: 100%;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-inline: var(--pd-x);
+
+  z-index: 999;
+}
+
+.navbar .text-2 {
+  margin: 0;
+}
+
+.menu-btn {
+  height: 30px;
+  width: 30px;
+  position: relative;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1000;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn span {
+  height: 2px;
+  width: 100%;
+
+  position: absolute;
+  right: 0;
+
+  transform: translate(-50%, -50%);
+  background: white;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn span.span1 {
+  top: 20%;
+  left: 50%;
+  width: 100%;
+}
+
+.menu-btn span.span2 {
+  top: 50%;
+  width: 100%;
+}
+
+.menu-btn span.span3 {
+  top: 80%;
+  width: 100%;
+  left: 50%;
+}
+
+/* style for the menu opened on mobile */
+
+.menuOpen .menu-btn {
+  transform: rotate(-180deg);
+}
+
+.menuOpen .menu-btn span.span1 {
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menuOpen .menu-btn span.span2 {
+  width: 0%;
+  opacity: 0;
+}
+
+.menuOpen .menu-btn span.span3 {
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* menu open on mobile */
+
+.links {
+  height: 100dvh;
+  width: 100%;
+
+  background: rgb(0, 0, 0);
+
+  padding-inline: var(--pd-x);
+
+  position: fixed;
+  top: 0;
+  left: -110%;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 1rem;
+
+  transition: 0.3s all ease-in-out;
+  border-radius: 0px 1000px 1000px 0;
+}
+
+.links .link {
+  font-size: var(--fs-600);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  overflow: hidden;
+}
+
+.links .link div {
+  display: flex;
+  gap: 1rem;
+}
+
+.links .link div .fa-solid {
+  width: 40px;
+}
+
+.links .link div {
+  position: relative;
+  top: 30px;
+
+  transition: 0s all ease-in-out;
+}
+
+.menuOpen .links {
+  left: 0%;
+  border-radius: 0px 0 0 0;
+}
+
+.menuOpen .links .link div {
+  top: 0px;
+  transition: 0.4s all ease-in-out 0.4s;
+}
+
+.menuOpen .links .link:nth-child(1) > div {
+  transition-delay: 0.4s;
+}
+
+.menuOpen .links .link:nth-child(2) > div {
+  transition-delay: 0.5s;
+}
+
+.menuOpen .links .link:nth-child(3) > div {
+  transition-delay: 0.6s;
+}
+
+.menuOpen .links .link:nth-child(4) > div {
+  transition-delay: 0.7s;
+}
+
+.menuOpen .links .link:nth-child(5) > div {
+  transition-delay: 0.8s;
+}
+
+.menuOpen .links .link:nth-child(6) > div {
+  transition-delay: 0.9s;
+}
+
+.menuOpen .links .link:nth-child(7) > div {
+  transition-delay: 1s;
+}

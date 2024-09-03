@@ -1,0 +1,40 @@
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1rem;
+
+  width: 100%;
+
+  position: relative;
+}
+
+.pricing-container .blob img {
+  position: absolute;
+
+  height: 120px;
+
+  filter: invert();
+}
+
+.pricing-container .blob.blob1 img {
+  top: 0px;
+  left: -20px;
+}
+
+.pricing-container .blob.blob2 img {
+  top: 50%;
+  right: -20px;
+}
+
+.pricing-container .blob.blob3 img {
+  bottom: -80px;
+  left: -20px;
+}
+
+@media (min-width: 768px) {
+  .pricing-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

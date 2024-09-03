@@ -1,0 +1,58 @@
+.pricing-card {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgb(255, 255, 255);
+
+  margin-bottom: 2rem;
+
+  width: 100%;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.pricing-card-title {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.pricing-card-features {
+  font-size: 1.125rem;
+  list-style: none;
+  padding: 0;
+
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.pricing-card button {
+  margin-top: 1rem;
+}
+
+.pricing-card-features .fa-regular {
+  margin-right: 4px;
+}
+
+.pricing-card-price-old {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.pricing-card-features li {
+  margin: 10px 0;
+}
+
+.pricing-card-price {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card-price span {
+  font-size: 0.8rem;
+}

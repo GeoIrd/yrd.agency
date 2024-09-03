@@ -1,0 +1,32 @@
+.footer {
+  padding-block: 5vh;
+  padding-inline: var(--pd-x);
+}
+
+.footer div {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex: 1;
+}
+
+.footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.footer .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.footer .p-1 {
+  padding-top: 1rem;
+}

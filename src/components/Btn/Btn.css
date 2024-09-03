@@ -1,0 +1,21 @@
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  color: black;
+}
+
+.btn.outlined {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
